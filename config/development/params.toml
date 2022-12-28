@@ -1,0 +1,9 @@
+  AuthorName = 'Jon Doe'
+  #  Analytics config
+  [analytics]
+    enable = true
+    # Fathom Analytics
+    [analytics.fathom]
+      id = "FWNDL"
+      # server url for your tracker if you're self hosting
+      server = "localhost:9000"
