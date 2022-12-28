@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://marco-santini.github.com/sitemap.xml
+Sitemap: https://marco-santini.github.io/sitemap.xml
