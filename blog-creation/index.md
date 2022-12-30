@@ -66,7 +66,7 @@ Here we are... now it's time to write some content in simple markdown format in 
 
 When I'll post a new *tale* the only thing I want to do is to push a commit on a branch and, thanks to Github actions, this is exactly what I'll have to do.
 
-This is the workflow config file that describe blog build action.
+This is the workflow config file that define blog build action.
 
 ```yaml
 name: github pages
@@ -99,6 +99,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 ```
+
+# Some repo config
+
+To create a Github personal Page the repo name must be <username>.github.io (read the doc for other configuration). 
+
+The Deploy step push the built content on an orphan branch named **gh-pages**, so we have to configure in *Settings* section of the repo the source branch that we want to serve.
+
+<img src="/posts/github_config.png" />
+
+> You can change this default behaviour and other params based on actions-gh-pages [docs](https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-set-another-github-pages-branch-publish_branch)
 
 # And that's it
 
