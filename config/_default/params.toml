@@ -15,45 +15,48 @@ description = "Here I put a few notes on topics or projects that I found interes
 # website images for Open Graph and Twitter Cards
 images = ["/images/logo_50x50.png"]
 
+custom_css = ["css/style.css"]
+#custom_js = ["js/custom.js"]
+
   # Header config
-  [header]
-    # desktop header mode ["fixed", "normal", "auto"]
-    desktopMode = "auto"
-    # mobile header mode ["fixed", "normal", "auto"]
-    mobileMode = "auto"
-    #  Header title config
-    [header.title]
-      # URL of the LOGO
-      logo = "/images/logo_with_background.png"
-      # title name
-      name = "Spare Time Tales"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
-      # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
-      #  whether to use typeit animation for title name
-      typeit = false
+[header]
+  # desktop header mode ["fixed", "normal", "auto"]
+  desktopMode = "auto"
+  # mobile header mode ["fixed", "normal", "auto"]
+  mobileMode = "auto"
+  #  Header title config
+  [header.title]
+    # URL of the LOGO
+    #logo = "/images/logo_with_background.png"
+    # title name
+    name = "Spare Time Tales"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = "<span class='icon-logo'></span> &nbsp;"
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    #  whether to use typeit animation for title name
+    typeit = false
 
-  # Footer config
-  [footer]
-    enable = true
-    #  Custom content (HTML format is supported)
-    custom = ''
-    #  whether to show Hugo and theme info
-    hugo = false
-    #  whether to show copyright info
-    copyright = true
-    #  whether to show the author
-    author = true
-    # Site creation time
-    since = 2019
-    # ICP info only in China (HTML format is supported)
-    icp = ""
-    # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+# Footer config
+[footer]
+  enable = true
+  #  Custom content (HTML format is supported)
+  custom = ''
+  #  whether to show Hugo and theme info
+  hugo = false
+  #  whether to show copyright info
+  copyright = true
+  #  whether to show the author
+  author = true
+  # Site creation time
+  since = 2019
+  # ICP info only in China (HTML format is supported)
+  icp = ""
+  # license info (HTML format is supported)
+  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
-  #  Section (all posts) page config
-  [section]
+#  Section (all posts) page config
+[section]
     # special amount of posts in each section page
     paginate = 20
     # date format (month and day)
