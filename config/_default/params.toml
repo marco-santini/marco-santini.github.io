@@ -130,7 +130,7 @@ images = ["/images/logo_50x50.png"]
       disclaimer = ""
     # Home page posts
     [home.posts]
-      enable = false
+      enable = true
       # special amount of posts in each home posts page
       paginate = 6
       #  replaced with hiddenFromHomePage in params.page
